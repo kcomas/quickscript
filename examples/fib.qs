@@ -1,7 +1,7 @@
 
 total = 30
 
-fib = (x: int): int {
+fn fib(x: int): int {
     if x <= 0 {
         return 0
     } elif x <= 2 {
@@ -13,5 +13,4 @@ fib = (x: int): int {
 
 export {
     total = total,
-    fib = fib
 }
