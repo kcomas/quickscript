@@ -30,7 +30,7 @@ typedef struct {
     union {
         struct {
             size_t len;
-            char* start;
+            char *start;
         } value;
         int64_t integer;
     } data;
