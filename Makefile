@@ -17,4 +17,4 @@ clean:
 
 .SUFFIXES: .c .o
 .c.o:
-	$(CC) $(CFLAGS) -c $<
+	$(CC) $(CFLAGS) -c -o $@ $<
