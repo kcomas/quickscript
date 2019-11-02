@@ -4,6 +4,9 @@
 #include <string.h>
 #include <stdbool.h>
 #include <stdint.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
 
 typedef struct {
     enum {
@@ -41,4 +44,4 @@ typedef struct {
     char str[];
 } token_state;
 
-token_state *tokenize_file(const char *path);
+token_state *tokenize_file_init(const char *path, char **const err);
